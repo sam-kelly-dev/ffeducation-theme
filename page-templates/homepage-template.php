@@ -15,12 +15,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 ?>
 <div class="full-height" style="height: 80vh; background: blue; background-image: url(<?php echo the_post_thumbnail_url( $post->ID, 'large'); ?>); background-size: cover; background-position-y: -150px;">
 	<div class="container d-flex" style="height: 100%;">
-		<div class="row align-items-center" style="padding-top: 15vh;">
+		<div class="row align-items-center">
 			<div class="col-sm-12">
-				
-				<h1 class="text-white" style="border-bottom: solid white; padding-bottom: 2rem;">
-					Fantastic Fungi Education
-				</h1>
 				<div style="padding-top: 2rem; font-size: 1.8rem;" class="text-white">
 					Are you ready to explore the magic<br/>that lives beneath your feet?
 				</div>

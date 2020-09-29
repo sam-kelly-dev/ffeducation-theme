@@ -56,7 +56,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 	    						?>
 	    						<div class="row" style="padding-top: 2rem;">
 	    							<div class="col-2 text-right" style="height: 100%;">
-	    								<i class="indicator fa fa-caret-right" style="vertical-align: middle; padding-bottom: 1.5rem;"></i> <span style="font-size: 3rem; padding-top: 2rem;">0<?php echo $i ?></span>
+	    								<i style="vertical-align: middle; padding-bottom: 1.5rem;"></i> <span class="heading-font" style="font-size: 3rem; padding-top: 2rem; font-family: ">0<?php echo $i ?></span>
 	    							</div>
 	    							<div class="col-10" style="border-bottom: solid thin black; padding-bottom: 1rem;">
 	    								<?php 
