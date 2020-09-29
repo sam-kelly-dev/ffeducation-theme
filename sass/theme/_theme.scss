@@ -135,3 +135,19 @@ a.next-module-link:link, a.next-module-link:hover, a.next-module-link:visited, a
 .homepage-module-preview{
 	margin-bottom: 2rem;
 }
+
+nav.navbar{
+	background: transparent;
+}
+nav.navbar {
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+nav.navbar.scrolled {
+    background: rgb(68, 68, 68); /* IE */
+    background: rgba(0, 0, 0, 1); /* NON-IE */
+}

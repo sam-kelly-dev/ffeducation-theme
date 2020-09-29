@@ -76,7 +76,27 @@ $container = get_theme_mod( 'understrap_container_type' );
 </div><!-- #page we need this extra closing tag here -->
 
 <?php wp_footer(); ?>
-
+<script>
+function checkScroll(){
+    var startY = jQuery('.navbar').height() * 2; //The point where the navbar changes in px
+    var top = jQuery(window).scrollTop();
+    console.log('Checkin scroll ' + startY + ', top: ' + top);
+    if(top > startY){
+        jQuery('.navbar').addClass("scrolled");
+    }else{
+        jQuery('.navbar').removeClass("scrolled");
+    }
+}
+jQuery(document).ready(function(){
+    console.log('DOCUMENT READY!');
+    if(jQuery('.navbar').length > 0){
+        console.log('Found navbar');
+        jQuery(window).on("scroll load resize", function(){
+            checkScroll();
+        });
+    }
+})
+</script>
 </body>
 
 </html>
