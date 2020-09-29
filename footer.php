@@ -54,7 +54,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 								?>
 						</div>
 						<div class="col-lg-3" style="padding-bottom: 3rem;">
-							<img src="/wordpress/wp-content/uploads/2020/09/partners.png" />
+							<img src="/wp-content/uploads/2020/09/partners.png" />
 						</div>
 					</div>
 					<div class="site-info">
