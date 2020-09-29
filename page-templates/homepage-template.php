@@ -71,15 +71,15 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<div class="container-fluid" style="padding-top: 3rem;">
 							<div class="row text-white text-center">
 								<div class="col-md-4">
-									<img src="/wordpress/wp-content/uploads/2020/09/teacher1.png" />
+									<img src="/wp-content/uploads/2020/09/teacher1.png" />
 									<h3 style="padding-top: 2rem; padding-bottom: 3rem;">William Padilla Brown</h3>
 								</div>
 								<div class="col-md-4">
-									<img src="/wordpress/wp-content/uploads/2020/09/teacher2.png" />
+									<img src="/wp-content/uploads/2020/09/teacher2.png" />
 									<h3 style="padding-top: 2rem; padding-bottom: 3rem;">Giuliana Furci</h3>
 								</div>
 								<div class="col-md-4">
-									<img src="/wordpress/wp-content/uploads/2020/09/teacher3.png" />
+									<img src="/wp-content/uploads/2020/09/teacher3.png" />
 									<h3 style="padding-top: 2rem; padding-bottom: 3rem;">Paul Stamets</h3>
 								</div>
 							</div>
