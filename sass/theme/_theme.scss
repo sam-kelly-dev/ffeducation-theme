@@ -1,0 +1,137 @@
+// This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+
+
+
+.home #content{
+	padding-left: 0;
+	padding-right: 0;
+}
+#wrapper-footer{
+	background: black;
+	.list-unstyled li {
+		padding-bottom: .75rem;
+		a, a:hover, a:visited, a:active{
+			font-size: 1.25rem;
+			color: white;
+		}
+		color: white;
+	}
+}
+#single-wrapper{
+	padding-top: 0px;
+}
+.home {
+	blockquote{
+		padding-left: 3rem;
+		padding-right: 3rem;
+		p {
+			font-weight: bold;
+		}
+	}
+}
+.the-modules{
+	
+}
+
+.the-teachers{
+	background: black;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+}
+
+.the-quote{
+	
+}
+
+.entry-content{
+	.nav-tabs{
+		border-bottom: 0;
+		li {
+			a {
+				background: transparent;
+				font-size: 1.25rem;
+				font-weight: bold;
+			}
+			.nav-link{ border: 0; background: transparent; color: white; }
+			.nav-link.active{
+				color: $danger;
+				border-bottom: thin solid $danger;
+			}
+		}
+	}
+}
+
+.tab-content{
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	font-size: 1.2rem;
+}
+
+.video-embed{
+	max-width: 50%;
+}
+
+.module-tabs{
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	color: white;
+}
+
+.bg-orange{
+	background: orange;
+}
+
+#lessons-accordion{
+	.row {
+		.col-10 { border-bottom: thin solid black; }
+	}
+	.row:last-of-type {
+		.col-10 {
+			border-bottom: 0;
+		}
+	}
+}
+
+blockquote, .pullquote{
+	p{
+		font-family: 'Noto Serif', serif;
+		font-weight: 700;
+	}
+}
+
+.module-preview{
+	a.header-link{
+		span{
+			border-bottom: solid red;
+		}
+	}
+	a.header-link:hover, a.header-link:active, a.header-link:visited, a.header-link:link{
+		color: white;
+		text-decoration: none;
+	}
+	a.header-link:hover{
+		color: grey;
+		span{
+			border-bottom: solid #7d0000;
+		}
+	}
+}
+.next-module{
+	.module-preview{
+		margin-bottom: 0px;
+	}
+}
+a.next-module-link:link, a.next-module-link:hover, a.next-module-link:visited, a.next-module-link:active,  {
+	color: white;
+	font-weight: bold;
+}
+#page{
+	&>.wrapper{
+		margin-bottom: 0px;
+		padding-bottom: 0px;
+	}
+}
+
+.homepage-module-preview{
+	margin-bottom: 2rem;
+}
