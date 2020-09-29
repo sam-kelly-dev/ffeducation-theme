@@ -33,7 +33,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 </div>
 <div class="featured-bar text-center" style="background: black;">
 	<div class="container">
-		<img src="/wordpress/wp-content/uploads/2020/09/featured_in.png">
+		<img src="/wp-content/uploads/2020/09/featured_in.png">
 	</div>
 </div>
 <div class="wrapper" id="full-width-page-wrapper">
