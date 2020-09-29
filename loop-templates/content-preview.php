@@ -15,7 +15,7 @@ $title_num = substr($exploded[0], -2);
 $title_text = $exploded[1];
 ?>
 
-<article class="module-preview" style="padding-top: 1rem; padding-bottom: 1rem; background-image: url(<?php echo the_post_thumbnail_url( $post->ID, 'large'); ?>); background-position: -25px -100px;" class="text-white" id="post-<?php the_ID(); ?>">
+<article class="module-preview" style="padding-top: 1rem; padding-bottom: 1rem; background-image: url(<?php echo the_post_thumbnail_url( $post->ID, 'large'); ?>); background-position: 0px 50%; background-size: cover;" class="text-white" id="post-<?php the_ID(); ?>">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-9">
