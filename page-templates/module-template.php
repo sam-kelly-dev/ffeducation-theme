@@ -37,18 +37,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<?php
 							global $post; 
  							$parentid = $post->ID;
-							if ( is_page() && $post->post_parent )
-								echo "";
-							 	// $parentid = $post->post_parent;
-							else
-							 	$parentid = $post->ID;
-							 
-							$childpages = wp_list_pages( 'sort_column=menu_order&title_li=&child_of=' . $parentid . '&depth=1&echo=0' );
-							if ( $childpages ) {
-							 
-							    $string = '<ul>' . $childpages . '</ul>';
-							}
-							 
 							// echo $string;
 	    				?>
 	    				<?php
