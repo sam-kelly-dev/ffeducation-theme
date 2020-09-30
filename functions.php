@@ -81,12 +81,15 @@ function preview_page_filter ($content) {
 }
 add_filter('preview_page_filter', 'preview_page_filter', 10, 1);
 
-function custom_excerpt_more($more) {
-   global $post;
-   $more_text = '';
-   return '… <a href="'. get_permalink($post->ID) . '">' . $more_text . '</a>';
+add_filter('excerpty', 'custom_excerpt_more', 10, 2);
+function custom_excerpt_more($excerpt, $t) {
+	$more_text = $t;
+	if ($more_text != "" && isset($more_text)){
+		$url = get_permalink(get_the_ID());
+		return $excerpt . "<a class='btn btn-primary read-more-link' style='background: black;' href='$url'>$more_text</a>";
+	}
+	return '';
 }
-add_filter('excerpt_more', 'custom_excerpt_more');
 
 function siblings($link) {
     global $post;
@@ -100,3 +103,21 @@ function siblings($link) {
 
     if ($link == 'before' || $link == 'after') { echo $closest[$link]; } else { return $closest; }
 }
+
+
+/**
+ * Allows for excerpt generation outside the loop.
+ * 
+ * @param string $text  The text to be trimmed
+ * @return string       The trimmed text
+ */
+function rw_trim_excerpt( $text='' )
+{
+    $text = strip_shortcodes( $text );
+    $text = apply_filters('the_content', $text);
+    $text = str_replace(']]>', ']]&gt;', $text);
+    $excerpt_length = apply_filters('excerpt_length', 55);
+    $excerpt_more = apply_filters('excerpt_more', ' ');
+    return wp_trim_words( $text, $excerpt_length, $excerpt_more );
+}
+// add_filter('wp_trim_excerpt', 'rw_trim_excerpt');

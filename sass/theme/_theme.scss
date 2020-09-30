@@ -156,3 +156,15 @@ a.navbar-brand{
 	font-family: 'Noto Serif', serif;
 	font-weight: bold;
 }
+
+.lesson-preview-header-bg-row{
+	background: white;
+	color: $black;
+}
+
+#steps-accordion{
+	.lesson-preview-header-bg-row{
+		background: black;
+		color: white;
+	}
+}

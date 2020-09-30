@@ -33,7 +33,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<?php get_template_part( 'loop-templates/content', 'module' ); ?>
 
 					<?php endwhile; // end of the loop. ?>
-						<div class="container">
+						<div class="container" style="padding-bottom: 2rem;">
 						<?php
 							global $post; 
  							$parentid = $post->ID;
@@ -47,24 +47,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 		        				'depth' => 1
 	    					);
 	    					$pages = get_pages($args);
-	    					$i = 1;
 	    				?>
+	    					<h2 style="padding-bottom: 1rem;">The Lessons:</h2>
 	    					<div class="accordion" id="lessons-accordion">
 	    				<?php
-
+	    					$i = 1;
 	    					foreach($pages as $post) {
-	    						?>
-	    						<div class="row" style="padding-top: 2rem;">
-	    							<div class="col-2 text-right" style="height: 100%;">
-	    								<i style="vertical-align: middle; padding-bottom: 1.5rem;"></i> <span class="heading-font" style="font-size: 3rem; padding-top: 2rem; font-family: ">0<?php echo $i ?></span>
-	    							</div>
-	    							<div class="col-10" style="border-bottom: solid thin black; padding-bottom: 1rem;">
-	    								<?php 
-		    								get_template_part('loop-templates/content', 'lesson-preview');
-		    							?>
-	    							</div>
-	    						</div>
-	    					<?php
+	    						$readmore = "Start Lesson";
+		    					get_template_part('loop-templates/content', 'lesson-preview');
 	    						$i++;
 	    					}
 	    				?>
@@ -81,6 +71,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 	    							$found_next_module = true;
 	    							$post = $child;
 	    							$next_text = "Go to next module";
+	    							$next_link = get_the_permalink($child->ID);
 	    							echo '<div class="next-module">';
 	    							get_template_part('loop-templates/content', 'preview');
 	    							echo '</div>';

@@ -35,7 +35,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<?php endwhile; // end of the loop. ?>
 
 
-						<div class="container">
+						<div class="container-fluid" style="padding-bottom: 2rem;">
 						<?php
 							global $post; 
  							$parentid = $post->ID;
@@ -63,25 +63,28 @@ $container = get_theme_mod( 'understrap_container_type' );
 	    					$pages = get_pages($args);
 	    					$i = 1;
 	    				?>
-	    					<div class="accordion" id="lessons-accordion">
+	    					<div class="accordion" id="steps-accordion">
 	    				<?php
 
 	    					foreach($pages as $post) {
-	    						?>
-	    						<div class="row" style="padding-top: 2rem;">
-	    							<div class="col-2 text-right" style="height: 100%;">
-	    								<i class="indicator fa fa-caret-right" style="vertical-align: middle; padding-bottom: 1.5rem;"></i> <span style="font-size: 3rem; padding-top: 2rem;">0<?php echo $i ?></span>
-	    							</div>
-	    							<div class="col-10 lesson-preview" style="padding-bottom: 1rem;">
-	    								<?php 
-		    								get_template_part('loop-templates/content', 'lesson-preview');
-		    							?>
-	    							</div>
-	    						</div>
-	    					<?php
+	    						$collapse_target = "collapse" . $post->ID;
+	    						$readmore = "";
+		    					get_template_part('loop-templates/content', 'lesson-preview');
 	    						$i++;
 	    					}
 	    				?>
+		    					<!--
+	    						<div class="row" style="padding-top: 2rem;">
+	    							<div class="col-2 text-right" style="height: 100%;">
+	    								<a class="expand-accordion" type="button" data-toggle="collapse" data-target="#<?php echo $collapse_target; ?>" aria-expanded="true" aria-controls="<?php echo $collapse_target; ?>" >
+		    								<i class="indicator fa fa-caret-right" style="vertical-align: middle; padding-bottom: 1.5rem;"></i>
+		    								<span style="font-size: 3rem; padding-top: 2rem;">0<?php echo $i ?>!</span>
+		    							</a>
+	    							</div>
+	    							<div class="col-10 step-preview" style="padding-bottom: 1rem;">
+	    							</div>
+	    						</div>
+	    						-->
 	    					</div>
 	    				</div>
 
@@ -95,7 +98,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 </div><!-- #full-width-page-wrapper -->
 <script>
-	jQuery('.accordion .entry-header').click(function () {
+	jQuery('.accordion .expand-accordion').click(function () {
 		// jQuery(this).parents('.row').toggleClass('fa fa-caret-right fa fa-caret-down');
 		jQuery(this).closest('.row').find('.indicator').toggleClass('fa fa-caret-down fa fa-caret-right')
 	});

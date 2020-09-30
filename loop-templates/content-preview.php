@@ -9,6 +9,7 @@
 defined( 'ABSPATH' ) || exit;
 global $post;
 global $next_text;
+global $next_link;
 $exploded = explode(" | ", $post->post_title);
 // echo var_dump($exploded);
 $title_num = substr($exploded[0], -2);
@@ -45,7 +46,7 @@ $title_text = $exploded[1];
 				</footer><!-- .entry-footer -->
 			</div>
 			<div class="col-sm-3 d-flex align-items-end">
-							<div class="text-white align-items-end" style="padding-bottom: 1rem;"><a class="next-module-link" style="font-size: 1.5rem;" href="#"><?php if (isset($next_text)) { echo $next_text; } ?></a></div>
+							<div class="text-white align-items-end" style="padding-bottom: 1rem;"><a class="next-module-link" style="font-size: 1.5rem;" href="<?php echo $next_link; ?>"><?php if (isset($next_text)) { echo $next_text; } ?></a></div>
 			</div>
 		</div>
 	</div>
