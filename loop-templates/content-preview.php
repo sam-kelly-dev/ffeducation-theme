@@ -19,7 +19,7 @@ $isComingSoon = in_category('Coming Soon');
 $opacity = $isComingSoon ? 0.5 : 1;
 ?>
 <div style="background-image: url(<?php echo the_post_thumbnail_url( $post->ID, 'large'); ?>); background-position: 0px 50%; background-size: cover;">
-	<article style="padding-top: 1rem; padding-bottom: 1rem;" class="module-preview" class="text-white" id="post-<?php the_ID(); ?>">
+	<article style="padding-top: 3rem; padding-bottom: 3rem;" class="module-preview" class="text-white" id="post-<?php the_ID(); ?>">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-9">

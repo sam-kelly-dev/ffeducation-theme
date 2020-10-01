@@ -41,17 +41,8 @@ $container = get_theme_mod( 'understrap_container_type' );
  							$parentid = $post->ID;
 							if ( is_page() && $post->post_parent )
 								echo "";
-							 	// $parentid = $post->post_parent;
 							else
 							 	$parentid = $post->ID;
-							 
-							$childpages = wp_list_pages( 'sort_column=menu_order&title_li=&child_of=' . $parentid . '&depth=1&echo=0' );
-							if ( $childpages ) {
-							 
-							    $string = '<ul>' . $childpages . '</ul>';
-							}
-							 
-							// echo $string;
 	    				?>
 	    				<?php
 	    					$args = array(
@@ -73,18 +64,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 	    						$i++;
 	    					}
 	    				?>
-		    					<!--
-	    						<div class="row" style="padding-top: 2rem;">
-	    							<div class="col-2 text-right" style="height: 100%;">
-	    								<a class="expand-accordion" type="button" data-toggle="collapse" data-target="#<?php echo $collapse_target; ?>" aria-expanded="true" aria-controls="<?php echo $collapse_target; ?>" >
-		    								<i class="indicator fa fa-caret-right" style="vertical-align: middle; padding-bottom: 1.5rem;"></i>
-		    								<span style="font-size: 3rem; padding-top: 2rem;">0<?php echo $i ?>!</span>
-		    							</a>
-	    							</div>
-	    							<div class="col-10 step-preview" style="padding-bottom: 1rem;">
-	    							</div>
-	    						</div>
-	    						-->
 	    					</div>
 	    				</div>
 
