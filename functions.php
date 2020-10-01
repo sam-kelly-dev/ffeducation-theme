@@ -81,12 +81,13 @@ function preview_page_filter ($content) {
 }
 add_filter('preview_page_filter', 'preview_page_filter', 10, 1);
 
-add_filter('excerpty', 'custom_excerpt_more', 10, 2);
-function custom_excerpt_more($excerpt, $t) {
+add_filter('excerpty', 'custom_excerpt_more', 10, 3);
+function custom_excerpt_more($excerpt, $t, $classes = "") {
+	global $post;
 	$more_text = $t;
 	if ($more_text != "" && isset($more_text)){
-		$url = get_permalink(get_the_ID());
-		return $excerpt . "<a class='btn btn-primary read-more-link' style='background: black;' href='$url'>$more_text</a>";
+		$url = get_permalink($post->ID);
+		return $excerpt . "<a class='btn btn-primary read-more-link $classes' href='$url'>$more_text</a>";
 	}
 	return '';
 }

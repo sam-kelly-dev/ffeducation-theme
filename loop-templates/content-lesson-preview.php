@@ -21,7 +21,7 @@ global $readmore;
 			<div class="container">
 				<header class="entry-header row" id="heading-<?php the_ID(); ?>">
 					<div class="col-3 col-md-2 text-right">
-						<a class="expand-accordion" type="button" data-toggle="collapse" data-target="#<?php echo $collapse_target; ?>" aria-expanded="true" aria-controls="<?php echo $collapse_target; ?>" >
+						<a class="expand-accordion" href="#" data-toggle="collapse" data-target="#<?php echo $collapse_target; ?>" aria-expanded="true" aria-controls="<?php echo $collapse_target; ?>" >
 				    		<?php if ($readmore == '') { ?>
 				    			<i class="indicator fa fa-caret-right" style="vertical-align: middle; padding-bottom: 1.5rem; letter-spacing: -4px;"></i>
 				    		<?php } ?>
@@ -31,8 +31,7 @@ global $readmore;
 					<div class="col-9 col-md-10">
 						<a
 							style="margin: 0px; padding: 0px;" 
-							class="expand-accordion"
-							type="button"
+							href="#" class="expand-accordion"
 							data-toggle="collapse" data-target="#<?php echo $collapse_target; ?>" 
 							aria-expanded="true" aria-controls="<?php echo $collapse_target; ?>"
 						>

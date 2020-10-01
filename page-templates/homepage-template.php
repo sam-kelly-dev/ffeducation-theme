@@ -52,7 +52,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<?php query_posts('category_name=modules&post_type=page&order=ASC'); ?>
 						<?php $i = 0; ?>
 						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-						<?php 
+						<?php
+						$readmore = "Explore Module";
 						echo "<div class='homepage-module-preview'>";
 						get_template_part( 'loop-templates/content', 'preview' ); 
 						echo "</div>";
