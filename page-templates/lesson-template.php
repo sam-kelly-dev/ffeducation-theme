@@ -99,7 +99,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 </div><!-- #full-width-page-wrapper -->
 <script>
 	jQuery('.accordion .expand-accordion').click(function () {
-		// jQuery(this).parents('.row').toggleClass('fa fa-caret-right fa fa-caret-down');
 		jQuery(this).closest('.row').find('.indicator').toggleClass('fa fa-caret-down fa fa-caret-right')
 	});
 </script>
