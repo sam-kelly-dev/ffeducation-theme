@@ -18,7 +18,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<div class="row align-items-center">
 			<div class="col-sm-12">
 				<div style="padding-top: 2rem; font-size: 1.8rem;" class="text-white">
-					Are you ready to explore the magic<br/>that lives beneath your feet?
+					Are you ready to<br/> explore the magic that<br/> lives beneath your feet?
 				</div>
 				<div style="padding-top: 3rem;">
 					<a href="#modules" class="btn btn-danger btn-lg"><strong>Start Learning</strong></a>
