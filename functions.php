@@ -50,26 +50,6 @@ function wpb_list_child_pages() {
 	}
 	return $string;
 }
-
-function module_setup_post_type() {
-	$labels = array(
-		'parent_label_colon' => __('Parent Module')
-	);
-    $args = array(
-        'hierarchical'  => true,
-        'public'    	=> true,
-        'labels'		=> $labels,
-        'label'     	=> __( 'Modules', 'textdomain' ),
-        'menu_icon' 	=> 'dashicons-book',
-        'show_in_rest' 	=> true,
-        'show_in_admin' => true,
-        'show_in_ui'	=> true,
-        'supports' 		=> array('page-attributes', 'editor', 'title', 'excerpt', 'thumbnail'),
-    );
-    register_post_type( 'module', $args );
-}
-add_action( 'init', 'module_setup_post_type' );
-
 function add_categories_to_pages() {
 	register_taxonomy_for_object_type( 'category', 'page' );
 }

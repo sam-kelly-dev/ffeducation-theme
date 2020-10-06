@@ -25,7 +25,7 @@ $parent_post = get_post($post->post_parent);
 		</div>
 	</div><!-- .entry-header --><!-- .entry-header -->
 
-	<div class="entry-content">
+	<div class="entry-content container">
 		<!--
 		<div class="entry-meta">
 
@@ -34,18 +34,19 @@ $parent_post = get_post($post->post_parent);
 		</div>
 		-->
 		<!-- .entry-meta -->
-		<div style="padding-top: 3rem; padding-bottom: 3rem;">
-			<?php the_content(); ?>
+		<div class="row">
+			<div class="col-12" style="padding-top: 3rem; padding-bottom: 3rem;">
+				<?php the_content(); ?>
+			</div>
+			<?php
+			wp_link_pages(
+				array(
+					'before' => '<div class="page-links">' . __( 'Pages:', 'understrap' ),
+					'after'  => '</div>',
+				)
+			);
+			?>
 		</div>
-		<?php
-		wp_link_pages(
-			array(
-				'before' => '<div class="page-links">' . __( 'Pages:', 'understrap' ),
-				'after'  => '</div>',
-			)
-		);
-		?>
-
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer container">
