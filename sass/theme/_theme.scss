@@ -165,7 +165,7 @@ a.navbar-brand{
 #steps-accordion{
 
 	.lesson-preview-header-bg-row{
-		background: $bg-blue;
+		background: $blue-bg;
 		color: white;
 
 		.expand-accordion{
@@ -187,5 +187,22 @@ a.navbar-brand{
 				text-decoration: none;
 			}
 		}
+	}
+}
+
+.read-more-link {
+	color: white;
+	background-color: $blue-bg;
+	border-color: $blue-bg;
+}
+
+.homepage-module-preview{
+	.read-more-link{
+		background-color: red;
+		border-color: red;
+	}
+	.read-more-link:hover, .read-more-link:active{
+		background-color: maroon;
+		border-color: maroon;
 	}
 }

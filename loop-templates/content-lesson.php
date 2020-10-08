@@ -25,7 +25,7 @@ $parent_post = get_post($post->post_parent);
 		</div>
 	</div><!-- .entry-header --><!-- .entry-header -->
 
-	<div class="entry-content container">
+	<div class="entry-content">
 		<!--
 		<div class="entry-meta">
 
@@ -34,8 +34,8 @@ $parent_post = get_post($post->post_parent);
 		</div>
 		-->
 		<!-- .entry-meta -->
-		<div class="row">
-			<div class="col-12" style="padding-top: 3rem; padding-bottom: 3rem;">
+		<div>
+			<div style="padding-top: 3rem; padding-bottom: 3rem;">
 				<?php the_content(); ?>
 			</div>
 			<?php

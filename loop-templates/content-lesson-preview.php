@@ -44,11 +44,13 @@ global $readmore;
 				</header><!-- .entry-header -->
 			</div>
 		</div>
-		<div class="row">
-			<div class="steps-preview-excerpt collapse entry-content" data-parent="#steps-accordion" style="padding: 1rem;" id="<?php echo $collapse_target; ?>">
-				<div class="container" >
-					<div>
-						<?php echo apply_filters('preview_page_filter', $post->post_content); ?>
+		<div class="container">
+			<div class="row">
+				<div class="steps-preview-excerpt collapse entry-content" data-parent="#steps-accordion" style="padding: 1rem;" id="<?php echo $collapse_target; ?>">
+					<div class="container" >
+						<div>
+							<?php echo apply_filters('preview_page_filter', $post->post_content); ?>
+						</div>
 					</div>
 				</div>
 			</div>
