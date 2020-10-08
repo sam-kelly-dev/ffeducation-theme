@@ -163,8 +163,9 @@ a.navbar-brand{
 }
 
 #steps-accordion{
+
 	.lesson-preview-header-bg-row{
-		background: black;
+		background: $bg-blue;
 		color: white;
 
 		.expand-accordion{
@@ -177,6 +178,7 @@ a.navbar-brand{
 	}
 }
 #lessons-accordion{
+
 	.lesson-preview-header-bg-row{
 		.expand-accordion{
 			color: black;

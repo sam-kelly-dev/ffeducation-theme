@@ -20,6 +20,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 
 <div class="wrapper" id="full-width-page-wrapper" style="padding-top: 0px;">
+	
 	<div id="content">
 
 		<div>
