@@ -121,7 +121,11 @@ blockquote, .pullquote{
 		margin-bottom: 0px;
 	}
 }
-a.next-module-link:link, a.next-module-link:hover, a.next-module-link:visited, a.next-module-link:active,  {
+.next-module-link{
+	font-weight: bold;
+	color: white;
+}
+a.next-module-link:link, a.next-module-link:hover, a.next-module-link:visited, a.next-module-link:active{
 	color: white;
 	font-weight: bold;
 }

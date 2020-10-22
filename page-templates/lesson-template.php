@@ -78,7 +78,18 @@ $container = get_theme_mod( 'understrap_container_type' );
 </div><!-- #full-width-page-wrapper -->
 <script>
 	jQuery('.accordion .expand-accordion').click(function () {
-		jQuery(this).closest('.row').find('.indicator').toggleClass('fa fa-caret-down fa fa-caret-right')
+		jQuery('.indicator').removeClass('fa-caret-down').removeClass('fa-caret-right').addClass('fa-caret-right');
+		var $row = jQuery(this).closest('.row');
+		var $indicator = $row.find('.indicator');
+		var collapsed = $row.find('a.expand-accordion').hasClass('collapsed');
+		console.log('COLLAPSED IS ' + collapsed);
+		if (collapsed) {
+			// it will collapse....
+			$indicator.addClass('fa-caret-down').removeClass('fa-caret-right');
+		} else {
+			$indicator.removeClass('fa-caret-down').addClass('fa-caret-right');
+		}
+
 	});
 </script>
 

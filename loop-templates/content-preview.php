@@ -13,7 +13,7 @@ global $next_link;
 global $readmore;
 $exploded = explode(" | ", $post->post_title);
 // echo var_dump($exploded);
-$title_num = substr($exploded[0], -2);
+$title_num = $exploded[0];
 $title_text = $exploded[1];
 $isComingSoon = in_category('Coming Soon');
 $opacity = $isComingSoon ? 0.5 : 1;
@@ -48,7 +48,7 @@ $opacity = $isComingSoon ? 0.5 : 1;
 								echo "<div style='opacity: $opacity;'>";
 								the_excerpt();
 								echo "</div>";
-								echo "<span class='coming-soon h3'>Coming Soon</span>";
+								echo "<span style='opacity: $opacity;' class='coming-soon h3'>Coming Soon</span>";
 							} else {
 								echo "<span style='opacity: $opacity;'>". apply_filters('excerpty', the_excerpt(), $readmore). "</span>"; 
 							}
@@ -62,7 +62,13 @@ $opacity = $isComingSoon ? 0.5 : 1;
 					</footer><!-- .entry-footer -->
 				</div>
 				<div class="col-sm-3 d-flex align-items-end">
-								<div class="text-white align-items-end" style="padding-bottom: 1rem;"><a class="next-module-link" style="font-size: 1.5rem;" href="<?php echo $next_link; ?>"><?php if (isset($next_text)) { echo $next_text; } ?></a></div>
+					<div class="text-white align-items-end" style="padding-bottom: 1rem;">
+						<?php if ($isComingSoon) { ?>
+						<span class="next-module-link" style="font-size: 1.5rem; opacity: <?php echo $opacity; ?>;" href="<?php echo $next_link; ?>"><?php if (isset($next_text)) { echo $next_text; } ?></span>
+						<?php } else { ?>
+						<a class="next-module-link" style="font-size: 1.5rem; opacity: <?php echo $opacity; ?>;" href="<?php echo $next_link; ?>"><?php if (isset($next_text)) { echo $next_text; } ?></a>
+						<?php } ?>
+					</div>
 				</div>
 			</div>
 		</div>

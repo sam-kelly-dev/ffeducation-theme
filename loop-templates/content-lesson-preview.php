@@ -31,7 +31,7 @@ global $readmore;
 					<div class="col-9 col-md-10">
 						<a
 							style="margin: 0px; padding: 0px;" 
-							href="#" class="expand-accordion"
+							href="#" class="expand-accordion collapsed"
 							data-toggle="collapse" data-target="#<?php echo $collapse_target; ?>" 
 							aria-expanded="true" aria-controls="<?php echo $collapse_target; ?>"
 						>
