@@ -14,6 +14,7 @@ global $readmore;
 $exploded = explode(" | ", $post->post_title);
 // echo var_dump($exploded);
 $title_num = $exploded[0];
+$title_num = str_replace("Module ", "", $title_num);
 $title_text = $exploded[1];
 $isComingSoon = in_category('Coming Soon');
 $opacity = $isComingSoon ? 0.5 : 1;
