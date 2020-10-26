@@ -167,5 +167,17 @@ if ( ! function_exists( 'understrap_widgets_init' ) ) {
 			)
 		);
 
+		register_sidebar(
+			array(
+				'name'          => __( 'Footer Email', 'understrap' ),
+				'id'            => 'footeremail',
+				'description'   => __( 'Part of the footer', 'understrap' ),
+				'before_widget' => '<div id="%1$s" class="footer-email-widget %2$s dynamic-classes">',
+				'after_widget'  => '</div><!-- .footer-widget -->',
+				'before_title'  => '<h3 class="widget-title email-widget-title">',
+				'after_title'   => '</h3>',
+			)
+		);
+
 	}
 } // endif function_exists( 'understrap_widgets_init' ).

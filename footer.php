@@ -32,14 +32,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 							</div>
 							<form style="padding-top: 2rem;">
 								<div class="form-row">
-									<div class="col-auto">
-								      <label class="sr-only" for="inlineFormInputGroup">Email address</label>
-								      <div class="input-group mb-2">
-								        <input type="text" class="form-control form-control-lg" id="inlineFormInputGroup" placeholder="Username">
-								      </div>
-								    </div>
 								    <div class="col-auto">
-								      <button type="submit" class="btn btn-danger mb-2 btn-lg">Subscribe</button>
+								    	<a href="https://mailchi.mp/d8080ca78f6f/fantasic-fungi" class="btn btn-danger">Sign Up</a>
+								      <!-- <button type="submit" class="btn btn-danger mb-2 btn-lg">Subscribe</button> -->
 								    </div>
 								</div>
 							</form>

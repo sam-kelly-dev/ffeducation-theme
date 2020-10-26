@@ -72,6 +72,8 @@ function custom_excerpt_more($excerpt, $t, $classes = "") {
 	return '';
 }
 
+add_filter('widget_text', 'do_shortcode');
+
 function siblings($link) {
     global $post;
     $siblings = get_pages('child_of='.$post->post_parent.'&parent='.$post->post_parent);
