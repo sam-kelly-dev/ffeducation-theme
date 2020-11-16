@@ -104,3 +104,42 @@ function rw_trim_excerpt( $text='' )
     return wp_trim_words( $text, $excerpt_length, $excerpt_more );
 }
 // add_filter('wp_trim_excerpt', 'rw_trim_excerpt');
+
+
+function getPrevNextPages($category) {
+
+	$page_query = new WP_Query(array('category_name' => $category, 'post_type' => 'page', 'order' => 'ASC'));
+	$pagelist = $page_query->posts;
+	$pages = array();
+	foreach ($pagelist as $page) {
+	   $pages[] += $page->ID;
+	}
+
+	$current = array_search(get_the_ID(), $pages);
+	$prevID = $pages[$current-1];
+	$nextID = $pages[$current+1];
+
+	echo '<div class="prev-next-page-nav"><div class="row">';
+	
+	if (!empty($prevID)) {
+		echo '<div class="col text-left">';
+		echo '<a href="';
+		echo get_permalink($prevID);
+		echo '"';
+		echo 'title="';
+		echo get_the_title($prevID); 
+		echo'"><i class="fa fa-lg fa-arrow-circle-o-left" aria-hidden="true" title="Copy to use arrow-circle-right" ></i></a>';
+		echo "</div>";
+	}
+	if (!empty($nextID)) {
+		echo '<div class="col text-right">';
+		echo '<a href="';
+		echo get_permalink($nextID);
+		echo '"';
+		echo 'title="';
+		echo get_the_title($nextID); 
+		echo'"><i class="fa fa-lg fa-arrow-circle-o-right" aria-hidden="true" title="Copy to use arrow-circle-right" ></i></a>';
+		echo "</div>";		
+	}
+	echo '</div></div>';
+}

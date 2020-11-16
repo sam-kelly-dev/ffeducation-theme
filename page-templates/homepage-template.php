@@ -49,7 +49,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<h2 id="modules">The Modules:</h2>
 					</div>
 					<div class="the-modules">
-						<?php query_posts('category_name=modules&post_type=page&order=ASC'); ?>
+						<?php query_posts('category_name=featured&post_type=page&order=ASC'); ?>
 						<?php $i = 0; ?>
 						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 						<?php

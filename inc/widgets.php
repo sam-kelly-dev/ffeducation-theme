@@ -179,5 +179,17 @@ if ( ! function_exists( 'understrap_widgets_init' ) ) {
 			)
 		);
 
+		register_sidebar(
+			array(
+				'name'          => __( 'Footer Sponsors', 'understrap' ),
+				'id'            => 'footersponsors',
+				'description'   => __( 'Sponsors', 'understrap' ),
+				'before_widget' => '<div id="%1$s" class="footer-sponsors-widget %2$s dynamic-classes">',
+				'after_widget'  => '</div><!-- .footer-widget -->',
+				'before_title'  => '<h3 class="widget-title sponsors-widget-title">',
+				'after_title'   => '</h3>',
+			)
+		);
+
 	}
 } // endif function_exists( 'understrap_widgets_init' ).

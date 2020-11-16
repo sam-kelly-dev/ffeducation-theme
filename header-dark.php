@@ -20,6 +20,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="shortcut icon" href="https://reconsider.org/wp-content/uploads/2018/12/fav-icon.png" type="image/png">
 	<link rel="icon" href="https://reconsider.org/wp-content/uploads/2018/12/fav-icon.png" type="image/png">
+	<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 	<?php wp_head(); ?>
 </head>
 
@@ -32,7 +33,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		<a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
 
-		<nav class="navbar navbar-scrollable navbar-expand-md navbar-dark fixed-top">
+		<nav class="navbar navbar-header-dark navbar-expand-md navbar-dark fixed-top">
 
 		<?php if ( 'container' == $container ) : ?>
 			<div class="container">

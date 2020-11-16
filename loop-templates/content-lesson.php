@@ -25,7 +25,7 @@ $parent_post = get_post($post->post_parent);
 		</div>
 	</div><!-- .entry-header --><!-- .entry-header -->
 
-	<div class="entry-content">
+	<div class="entry-content container">
 		<!--
 		<div class="entry-meta">
 

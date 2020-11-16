@@ -206,3 +206,22 @@ a.navbar-brand{
 		border-color: maroon;
 	}
 }
+
+
+nav.navbar-header-dark{
+	background: black;
+}
+
+.prev-next-page-nav{
+	margin-bottom: 1rem;
+	a{
+		font-size: 3rem;
+		color: black;
+	}
+	a:hover{
+		color: blue;
+	}
+}
+#wrapper-footer-full{
+	background: transparent;
+}
