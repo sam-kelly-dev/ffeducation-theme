@@ -108,7 +108,7 @@ function rw_trim_excerpt( $text='' )
 
 function getPrevNextPages($category) {
 
-	$page_query = new WP_Query(array('category_name' => $category, 'post_type' => 'page', 'order' => 'ASC'));
+	$page_query = new WP_Query(array( 'orderby' => 'menu_order', 'order' => 'DESC', 'category_name' => $category, 'post_type' => 'page' ));
 	$pagelist = $page_query->posts;
 	$pages = array();
 	foreach ($pagelist as $page) {
@@ -116,8 +116,8 @@ function getPrevNextPages($category) {
 	}
 
 	$current = array_search(get_the_ID(), $pages);
-	$prevID = $pages[$current-1];
-	$nextID = $pages[$current+1];
+	$prevID = $pages[$current+1];
+	$nextID = $pages[$current-1];
 
 	echo '<div class="prev-next-page-nav"><div class="row">';
 	

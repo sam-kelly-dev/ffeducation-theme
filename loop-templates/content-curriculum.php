@@ -10,18 +10,6 @@ defined( 'ABSPATH' ) || exit;
 global $post;
 $parent_id = $post->post_parent;
 $parent_post = get_post($post->post_parent);
-
-
-$pagelist = get_pages('sort_column=menu_order&sort_order=ASC&category_name=curriculum');
-$pages = array();
-foreach ($pagelist as $page) {
-   $pages[] += $page->ID;
-}
-
-$current = array_search(get_the_ID(), $pages);
-$prevID = $pages[$current-1];
-$nextID = $pages[$current+1];
-
 ?>
 
 <div <?php post_class(); ?> id="post-<?php the_ID(); ?>" style="padding-top: 1rem;">
