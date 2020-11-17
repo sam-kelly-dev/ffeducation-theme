@@ -12,7 +12,7 @@ $parent_id = $post->post_parent;
 $parent_post = get_post($post->post_parent);
 
 
-$pagelist = get_pages('sort_column=menu_order&sort_order=asc&category_name=curriculum');
+$pagelist = get_pages('sort_column=menu_order&sort_order=desc&category_name=curriculum');
 $pages = array();
 foreach ($pagelist as $page) {
    $pages[] += $page->ID;
