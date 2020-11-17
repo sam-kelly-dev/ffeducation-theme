@@ -108,7 +108,7 @@ function rw_trim_excerpt( $text='' )
 
 function getPrevNextPages($category) {
 
-	$page_query = new WP_Query(array( 'orderby' => 'menu_order', 'order' => 'DESC', 'category_name' => $category, 'post_type' => 'page' ));
+	$page_query = new WP_Query(array( 'orderby' => 'menu_order', 'order' => 'DESC', 'sort_order' => 'menu_order', 'sort_column' => 'DESC', 'category_name' => $category, 'post_type' => 'page' ));
 	$pagelist = $page_query->posts;
 	$pages = array();
 	foreach ($pagelist as $page) {
