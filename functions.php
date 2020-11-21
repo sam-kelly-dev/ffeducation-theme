@@ -150,6 +150,7 @@ function getPrevNextPages($category) {
 
 function mushroom_hints($text) {
 	$text = str_replace('&lt;m>', '<span class="iconify" data-icon="si-glyph:mushrooms" data-inline="false"></span>', $text);
+	$text = str_replace('&lt;m&gt;', '<span class="iconify" data-icon="si-glyph:mushrooms" data-inline="false"></span>', $text);
 	return $text;
 }
 add_filter('the_content', 'mushroom_hints', 1);
