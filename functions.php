@@ -108,7 +108,7 @@ function rw_trim_excerpt( $text='' )
 
 function getPrevNextPages($category) {
 
-	$page_query = new WP_Query(array( 'orderby' => 'menu_order', 'order' => 'DESC', 'sort_order' => 'menu_order', 'sort_column' => 'DESC', 'category_name' => $category, 'post_type' => 'page' ));
+	$page_query = new WP_Query(array( 'orderby' => 'menu_order', 'order' => 'DESC', 'category_name' => $category, 'post_type' => 'page' ));
 	$pagelist = $page_query->posts;
 	$pages = array();
 	foreach ($pagelist as $page) {
@@ -142,4 +142,14 @@ function getPrevNextPages($category) {
 		echo "</div>";		
 	}
 	echo '</div></div>';
+	// echo '<div><pre>';
+	// echo print_r($pages, true);
+	// echo '</pre></div>';
 }
+
+
+function mushroom_hints($text) {
+	$text = str_replace('&lt;m>', '<span class="iconify" data-icon="si-glyph:mushrooms" data-inline="false"></span>', $text);
+	return $text;
+}
+add_filter('the_content', 'mushroom_hints', 1);

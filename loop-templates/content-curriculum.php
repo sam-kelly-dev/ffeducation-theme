@@ -12,12 +12,12 @@ $parent_id = $post->post_parent;
 $parent_post = get_post($post->post_parent);
 ?>
 
-<div <?php post_class(); ?> id="post-<?php the_ID(); ?>" style="padding-top: 1rem;">
+<div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
 	<div style="background-image: url(<?php echo the_post_thumbnail_url( $post->ID, 'large'); ?>); background-size: cover; background-position: -10px -200px; height: 25vh;">
 		<div class="container d-flex" style="height: 100%;">
 		</div>
-	</div><!-- .entry-header --><!-- .entry-header -->
+	</div><!-- .entry-header -->
 
 	<div class="entry-content">
 		<!-- .entry-meta -->
