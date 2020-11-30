@@ -224,6 +224,7 @@ nav.navbar-header-dark{
 }
 #wrapper-footer-full{
 	background: transparent;
+	padding: 0px;
 }
 
 #curriculum-page-wrapper{
@@ -231,4 +232,19 @@ nav.navbar-header-dark{
 		font-size: 1.5rem;
 		line-height: 2.25rem;
 	}
+}
+
+.film-footer{
+	text-align: center;
+	.col{
+		padding: 2rem;
+		align-items: center;
+		background: #707070;
+	}
+	.col:first-child{
+		background: #cccccc;
+	}
+	.text-fixer{
+	}
+
 }
