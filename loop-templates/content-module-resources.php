@@ -51,7 +51,7 @@ $opacity = $isComingSoon ? 0.5 : 1;
 							?>
 						</div>
 						<div class="col-12 col-md-6 col-lg-4 text-right">
-							<a style="font-size: 1.2rem;" class='btn btn-primary read-more-link' href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+							<a style="font-size: 1.2rem;" class='btn btn-primary read-more-link' href="<?php the_permalink(); ?>">Module <?php echo $i+1; ?> Resources</a>
 						</div>
 					</div><!-- .entry-content -->
 
