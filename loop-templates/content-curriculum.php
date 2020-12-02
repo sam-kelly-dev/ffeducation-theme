@@ -25,7 +25,7 @@ $parent_post = get_post($post->post_parent);
 			<div style="padding-top: 3rem; padding-bottom: 3rem;" class="container">
 				<div class="row justify-content-center">
 					<div class="col col-sm-12 col-md-10 col-lg-9">
-						<?php the_title( '<h1 class="entry-title"><strong>', '</strong></h1>' ); echo $post->menu_order; ?>
+						<?php the_title( '<h1 class="entry-title"><strong>', '</strong></h1>' ); ?>
 						<!-- <h3><span class="iconify" data-icon="si-glyph:mushrooms" data-inline="false"></span></h3> -->
 						<?php the_content(); ?>
 					</div>
