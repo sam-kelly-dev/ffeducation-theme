@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Module Resources Template
+ * Template Name: Resources Template
  *
  * Template for displaying the film stuff
  *
