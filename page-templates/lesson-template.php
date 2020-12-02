@@ -74,6 +74,28 @@ $container = get_theme_mod( 'understrap_container_type' );
 		</div><!-- .row end -->
 
 	</div><!-- #content -->
+	<div class="container-fluid film-footer">
+		<div class="row text-center text-white">
+			<div class="col">
+				<h2>Explore Online Activities!</h2>
+				<div class="text-fixer">
+					<p>Enjoy the film and want to dive deeper into the fungi kingdom! We’ve partnered with the Fungi Files to bring you interactive online activities that will leave you ready to be the next citizen scientist!</p>
+				</div>
+				<a href="#" class="btn btn-danger">
+					Start Course
+				</a>
+			</div>
+			<div class="col">
+				<h2>Module Resources!</h2>
+				<div class="text-fixer">
+					<p>We've organized all of the clips by module to make them easier for you to find!</p>
+				</div>
+				<a href="#" class="btn btn-danger">
+					Go To Clips
+				</a>
+			</div>
+		</div>
+	</div>
 
 </div><!-- #full-width-page-wrapper -->
 <script>
