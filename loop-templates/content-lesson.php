@@ -12,8 +12,8 @@ $parent_id = $post->post_parent;
 $parent_post = get_post($post->post_parent);
 ?>
 
-<div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
-
+<div <?php post_class(); ?> id="post-<?php the_ID(); ?>" style="margin-top: 1rem; padding-top: 1rem;">
+	<!--
 	<div style="background-image: url(<?php echo the_post_thumbnail_url( $post->ID, 'large'); ?>); background-size: cover; background-position: -10px -200px; height: 60vh;">
 		<div class="container d-flex" style="height: 100%;">
 			<div class="row align-items-center text-white">
@@ -23,8 +23,12 @@ $parent_post = get_post($post->post_parent);
 				</div>
 			</div>
 		</div>
-	</div><!-- .entry-header --><!-- .entry-header -->
-
+	</div>
+	-->
+	<!-- .entry-header --><!-- .entry-header -->
+	<div class="container">
+		<?php the_title( '<h1 class="entry-title"><strong>', '</strong></h1>' ); ?>
+	</div>
 	<div class="entry-content container">
 		<!--
 		<div class="entry-meta">
