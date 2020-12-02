@@ -45,22 +45,33 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<div class="container-fluid film-footer">
 		<div class="row text-center text-white">
 			<div class="col">
-				<h2>Explore Online Activities!</h2>
-				<div class="text-fixer">
-					<p>Enjoy the film and want to dive deeper into the fungi kingdom! We’ve partnered with the Fungi Files to bring you interactive online activities that will leave you ready to be the next citizen scientist!</p>
-				</div>
-				<a href="#" class="btn btn-danger">
-					Start Course
-				</a>
 			</div>
 			<div class="col">
-				<h2>Explore The Curriculum!</h2>
-				<div class="text-fixer">
-					<p>Enjoy the film and want to dive deeper into the fungi kingdom! We’ve partnered with the Fungi Files to bring you interactive online activities that will leave you ready to be the next citizen scientist!</p>
+				<div class="row justify-content-center">
+					<div class="col-12 col-md-9 col-lg-8">
+						<h2>Explore Online Activities!</h2>
+						<div class="text-fixer">
+							<p>Enjoy the film and want to dive deeper into the fungi kingdom! We’ve partnered with the Fungi Files to bring you interactive online activities that will leave you ready to be the next citizen scientist!</p>
+						</div>
+						<a href="#" class="btn btn-danger">
+							Start Course
+						</a>
+					</div>
 				</div>
-				<a href="#" class="btn btn-danger">
-					Start Course
-				</a>
+			</div>
+			<div class="col">
+				<div class="row justify-content-center">
+					<div class="col-12 col-md-9 col-lg-8">
+				
+						<h2>Explore The Curriculum!</h2>
+						<div class="text-fixer">
+							<p>Enjoy the film and want to dive deeper into the fungi kingdom! We’ve partnered with the Fungi Files to bring you interactive online activities that will leave you ready to be the next citizen scientist!</p>
+						</div>
+						<a href="#" class="btn btn-danger">
+							Start Course
+						</a>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
