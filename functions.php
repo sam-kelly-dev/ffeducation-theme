@@ -114,9 +114,15 @@ function getPrevNextPages($category) {
 	foreach ($pagelist as $page) {
 	   $pages[] += $page->ID;
 	}
+	$pagedebug = array_map(
+		function($ele) {
+			return $ele->post_title . '{' . $ele->menu_order . '}';
+		},
+		$pagelist
+	);
 	echo '<pre>' . get_the_ID() . '</pre>';
 	echo '<div><pre>';
-	echo print_r($pagelist, true);
+	echo print_r($pagedebug, true);
 	echo '</pre></div>';
 
 	$current = array_search(get_the_ID(), $pages);
