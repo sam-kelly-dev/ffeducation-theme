@@ -61,7 +61,7 @@ if ($i == 0) {
 							} else {
 								echo "<span style='opacity: $opacity;'>". apply_filters('excerpty', the_excerpt(), $readmore). "</span>";
 								if ($i == 1) { //curriculum
-									echo "&nbsp;<span style='opacity: $opacity'><a class='btn btn-primary read-more-link' href='https://localhost/wordpress/video-resources/'>Video Resources</a></span>";
+									echo "&nbsp;<span style='opacity: $opacity'><a class='btn btn-primary read-more-link' href='./video-resources/'>Video Resources</a></span>";
 								}
 							}
 						?>
