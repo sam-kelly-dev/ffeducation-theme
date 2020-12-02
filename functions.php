@@ -120,10 +120,10 @@ function getPrevNextPages($category) {
 		},
 		$pagelist
 	);
-	echo '<pre>' . get_the_ID() . '</pre>';
-	echo '<div><pre>';
-	echo print_r($pagedebug, true);
-	echo '</pre></div>';
+	// echo '<pre>' . get_the_ID() . '</pre>';
+	// echo '<div><pre>';
+	// echo print_r($pagedebug, true);
+	// echo '</pre></div>';
 
 	$current = array_search(get_the_ID(), $pages);
 	$prevID = $pages[$current+1];
