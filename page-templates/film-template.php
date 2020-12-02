@@ -45,8 +45,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<div class="container-fluid film-footer">
 		<div class="row text-center text-white">
 			<div class="col">
-			</div>
-			<div class="col">
 				<div class="row justify-content-center">
 					<div class="col-12 col-md-9 col-lg-8">
 						<h2>Explore Online Activities!</h2>
