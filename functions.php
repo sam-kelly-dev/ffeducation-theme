@@ -114,6 +114,9 @@ function getPrevNextPages($category) {
 	foreach ($pagelist as $page) {
 	   $pages[] += $page->ID;
 	}
+	echo '<div><pre>';
+	echo print_r($pages, true);
+	echo '</pre></div>';
 
 	$current = array_search(get_the_ID(), $pages);
 	$prevID = $pages[$current+1];
@@ -142,9 +145,6 @@ function getPrevNextPages($category) {
 		echo "</div>";		
 	}
 	echo '</div></div>';
-	// echo '<div><pre>';
-	// echo print_r($pages, true);
-	// echo '</pre></div>';
 }
 
 
