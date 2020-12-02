@@ -11,6 +11,7 @@ global $post;
 global $next_text;
 global $next_link;
 global $readmore;
+global $i;
 $exploded = explode(" | ", $post->post_title);
 // echo var_dump($exploded);
 $title_num = $exploded[0];
@@ -18,6 +19,13 @@ $title_num = str_replace("Module ", "", $title_num);
 $title_text = $exploded[1];
 $isComingSoon = in_category('Coming Soon');
 $opacity = $isComingSoon ? 0.5 : 1;
+if ($i == 0) {
+	$title_text = "The Film";
+} else if ($i == 1) {
+	$title_text = "The Curriculum";
+} else {
+	$title_text = "Interactive Activites";
+}
 ?>
 <div style="background-image: url(<?php echo the_post_thumbnail_url( $post->ID, 'large'); ?>); background-position: 0px 50%; background-size: cover;">
 	<article style="padding-top: 3rem; padding-bottom: 3rem;" class="module-preview" class="text-white" id="post-<?php the_ID(); ?>">
@@ -31,8 +39,8 @@ $opacity = $isComingSoon ? 0.5 : 1;
 								<?php if (!$isComingSoon) { ?>
 								<a class="header-link" href="<?php echo get_permalink($post->ID); ?>" style="opacity: <?php echo $opacity; ?>">
 								<?php } ?>
-									<span class="h1 inline-block" style="padding-right: 3rem; opacity: <?php echo $opacity; ?>"><?php echo $title_num; ?></span>
-									<div class="h3 entry-title" style="padding-top: .5rem; opacity: <?php echo $opacity; ?>"><?php echo $title_text; ?></div>
+									<!-- <span class="h1 inline-block" style="padding-right: 3rem; opacity: <?php echo $opacity; ?>"><?php echo $title_num; ?></span> -->
+									<div class="h1 entry-title" style="padding-top: .5rem; opacity: <?php echo $opacity; ?>"><?php echo $title_text; ?></div>
 								<?php if (!$isComingSoon) { ?>
 								</a>
 								<?php } ?>
@@ -49,9 +57,12 @@ $opacity = $isComingSoon ? 0.5 : 1;
 								echo "<div style='opacity: $opacity;'>";
 								the_excerpt();
 								echo "</div>";
-								echo "<span style='opacity: $opacity;' class='coming-soon h3'>Coming Soon</span>";
+								echo "<div class='text-right'><span style='opacity: $opacity;' class='coming-soon h3'>Coming Soon</span></div>";
 							} else {
-								echo "<span style='opacity: $opacity;'>". apply_filters('excerpty', the_excerpt(), $readmore). "</span>"; 
+								echo "<span style='opacity: $opacity;'>". apply_filters('excerpty', the_excerpt(), $readmore). "</span>";
+								if ($i == 1) { //curriculum
+									echo "&nbsp;<span style='opacity: $opacity'><a class='btn btn-primary read-more-link' href='https://localhost/wordpress/video-resources/'>Video Resources</a></span>";
+								}
 							}
 						?>
 					</div><!-- .entry-content -->
