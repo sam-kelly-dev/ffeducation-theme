@@ -19,13 +19,6 @@ $title_num = str_replace("Module ", "", $title_num);
 $title_text = $exploded[1];
 $isComingSoon = in_category('Coming Soon');
 $opacity = $isComingSoon ? 0.5 : 1;
-if ($i == 0) {
-	$title_text = "The Film";
-} else if ($i == 1) {
-	$title_text = "The Curriculum";
-} else {
-	$title_text = "Interactive Activites";
-}
 ?>
 <div style="background-image: url(<?php echo the_post_thumbnail_url( $post->ID, 'large'); ?>); background-position: 0px 50%; background-size: cover;">
 	<article style="padding-top: 3rem; padding-bottom: 3rem;" class="module-preview" class="text-white" id="post-<?php the_ID(); ?>">

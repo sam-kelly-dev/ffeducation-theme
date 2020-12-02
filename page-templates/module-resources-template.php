@@ -41,14 +41,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<?php $i = 0; ?>
 						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 						<?php
-						$readmore = "Explore Module";
-						if ($i == 0) {
-							$readmore = "View Film";
-						} else if ($i == 1) {
-							$readmore = "Start Learning";
-						} else {
-							$readmore = "Explore Activities";
-						}
 						echo "<div class='homepage-module-preview'>";
 						get_template_part( 'loop-templates/content', 'module-resources' ); 
 						echo "</div>";
