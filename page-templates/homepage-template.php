@@ -45,9 +45,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<?php get_template_part( 'loop-templates/content', 'homepage' ); ?>
 
 					<?php endwhile; // end of the loop. ?>
+					<!--
 					<div class="container" style="padding-top: 1rem; padding-bottom: 1.5rem;">
 						<h2 id="modules">The Modules:</h2>
 					</div>
+					-->
 					<div class="the-modules">
 						<?php query_posts('category_name=featured&post_type=page&order=ASC'); ?>
 						<?php $i = 0; ?>

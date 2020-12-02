@@ -19,7 +19,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 <?php endif; ?>
 
 
-<div class="wrapper" id="full-width-page-wrapper" style="padding-top: 0px;">
+<div class="wrapper" id="full-width-page-wrapper" style="padding-top: 0px; margin-top: 1rem;">
 	
 	<div id="content">
 
