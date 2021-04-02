@@ -104,14 +104,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 	    							if ($this_menu_order - 1 == $child->menu_order && !$found_last_module) {
 	    								$found_last_module = true;
 	    								$back_post = $child;
-	    								$back_text = "Go to previous module";
+	    								$back_text = "Next Module";
 	    								$back_link = get_the_permalink($child->ID);
 	    							}
 	    						}
 	    						if (!$found_next_module && $child->menu_order == $this_menu_order + 1) {
 	    							$found_next_module = true;
 	    							$forward_post = $child;
-	    							$forward_text = "Go to next module";
+	    							$forward_text = "Previous Module";
 	    							$forward_link = get_the_permalink($child->ID);
 	    							// echo '<div class="next-module">';
 	    							// get_template_part('loop-templates/content', 'module-preview');
@@ -127,7 +127,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 	    						$post = $back_post;
 	    						$next_text = $back_text;
 	    						$next_link = $back_link;
-	    						echo "<div class='prev-module col-{$colsize}'>";
+	    						echo "<div class='prev-module col-{$colsize}' style='padding:0;'>";
 	    						get_template_part('loop-templates/content', 'module-preview');
 	    						echo "</div>";
 	    					}
@@ -135,7 +135,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 	    						$post = $forward_post;
 	    						$next_text = $forward_text;
 	    						$next_link = $forward_link;
-	    						echo "<div class='next-module col-{$colsize}'>";
+	    						echo "<div class='next-module col-{$colsize}' style='padding:0;'>";
 	    						get_template_part('loop-templates/content', 'module-preview');
 	    						echo "</div>";
 	    					}
