@@ -81,11 +81,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 	    						'post_type' => 'page', 
 	    						'order' => 'ASC', 
 	    						'orderby' => 'menu_order',
-				                'taxonomy' => 'category',
-				                        'field' => 'slug',
-				                        'term' => 'modules'
+				                'category_name' => 'modules'
 	    					];
-	    					$children = get_pages($args);
+	    					$children = get_posts($args);
 	    					$found_next_module = false;
 	    					foreach($children as $child) {
 	    						echo $child->post_title . "<br/>";
