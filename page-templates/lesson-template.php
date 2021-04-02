@@ -77,9 +77,17 @@ $container = get_theme_mod( 'understrap_container_type' );
 	    				<!-- GET SIBLINGS -->
 	    				<?php
 	    					// get all the children
-	    					$args = ['post_type' => 'page', 'post_parent' => $post->post_parent, 'order' => 'ASC', 'orderby' => 'menu_order'];
-	    					$children = get_pages($args);
+	    					$args = [
+	    						'post_type' => 'page', 
+	    						'order' => 'ASC', 
+	    						'orderby' => 'menu_order',
+				                'category_name' => 'Modules'
+	    					];
+	    					$children = get_posts($args);
 	    					$found_next_module = false;
+	    					foreach($children as $child) {
+	    						echo $child->post_title . "<br/>";
+	    					}
 	    					foreach($children as $child) {
 	    						if (!$found_next_module && $child->menu_order == $this_menu_order + 1) {
 	    							$found_next_module = true;
@@ -87,7 +95,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 	    							$next_text = "Go to next module";
 	    							$next_link = get_the_permalink($child->ID);
 	    							echo '<div class="next-module">';
-	    							get_template_part('loop-templates/content', 'preview');
+	    							get_template_part('loop-templates/content', 'module-preview');
 	    							echo '</div>';
 	    						}
 	    					}
