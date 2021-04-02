@@ -80,7 +80,7 @@ if ($i == 0) {
 				<div class="col-sm-3 d-flex align-items-end">
 					<div class="text-white align-items-end" style="padding-bottom: 1rem;">
 						<?php if ($isComingSoon) { ?>
-						<span class="next-module-link" style="font-size: 1.5rem; opacity: <?php echo $opacity; ?>;" href="<?php echo $next_link; ?>"><?php if (isset($next_text)) { echo $next_text; } ?></span>
+						<span class="next-module-link" style="font-size: 1.5rem; opacity: <?php echo $opacity; ?>;" href="<?php echo $next_link; ?>"><?php echo "COMING SOON"; ?></span>
 						<?php } else { ?>
 						<a class="next-module-link" style="font-size: 1.5rem; opacity: <?php echo $opacity; ?>;" href="<?php echo $next_link; ?>"><?php if (isset($next_text)) { echo $next_text; } ?></a>
 						<?php } ?>
