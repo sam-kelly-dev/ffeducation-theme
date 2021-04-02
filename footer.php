@@ -25,12 +25,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 				<footer class="site-footer text-white" id="colophon">
 					<div class="row">
-
+						<div class="col-lg-6" style="padding-bottom: 3rem; padding-top: 2rem;">
 							<?php
-								if (is_active_sidebar('footeremail')) {
-									dynamic_sidebar('footeremail');
+								if (is_active_sidebar('footersponsors')) {
+									dynamic_sidebar('footersponsors');
 								}
 							?>
+						</div>
 						<div class="col-lg-3" style="padding-bottom: 3rem; padding-top: 2rem;">
 							<div class="h3" style="padding-bottom: 2rem;"><strong>Navigate</strong></div>
 							<?php
