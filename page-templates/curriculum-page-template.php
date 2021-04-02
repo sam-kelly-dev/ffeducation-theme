@@ -43,7 +43,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 	</div><!-- #content -->
 
-	<!--
+	
 	<div class="container-fluid film-footer">
 		<div class="row text-center text-white">
 			<div class="col">
@@ -74,7 +74,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			</div>
 		</div>
 	</div>
-	-->
+
 </div><!-- #full-width-page-wrapper -->
 
 <?php get_footer(); ?>

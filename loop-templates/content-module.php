@@ -21,7 +21,7 @@ defined( 'ABSPATH' ) || exit;
 		</div>
 	</div><!-- .entry-header -->
 
-	<div class="entry-content">
+	<div class="entry-content container">
 		<!--
 		<div class="entry-meta">
 
