@@ -12,6 +12,7 @@ defined( 'ABSPATH' ) || exit;
 
 get_header('dark');
 $container = get_theme_mod( 'understrap_container_type' );
+$this_menu_order = $post->menu_order;
 ?>
 
 <?php if ( is_front_page() ) : ?>
@@ -86,7 +87,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 	    					$children = get_posts($args);
 	    					$found_next_module = false;
 	    					foreach($children as $child) {
-	    						echo $child->post_title . "<br/>";
+	    						echo $child->post_title .  . "<br/>";
 	    					}
 	    					foreach($children as $child) {
 	    						if (!$found_next_module && $child->menu_order == $this_menu_order + 1) {
