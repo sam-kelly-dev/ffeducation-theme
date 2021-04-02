@@ -27,8 +27,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<div class="row">
 						<div class="col-lg-6" style="padding-bottom: 3rem; padding-top: 2rem;">
 							<?php
-								if (is_active_sidebar('footersponsors')) {
-									dynamic_sidebar('footersponsors');
+								if (is_active_sidebar('footeremail')) {
+									dynamic_sidebar('footeremail');
 								}
 							?>
 						</div>
