@@ -61,11 +61,11 @@ if ($i == 0) {
 							} else {
 								// echo "<span style='opacity: $opacity;'>". apply_filters('excerpty', the_excerpt(), $readmore). "</span>";
 								if ($i == 0) {;
-									// echo "<a class='btn btn-primary read-more-link' href='./the-film/'>View Film</a>";
+									echo "<a class='btn btn-primary read-more-link' href='./the-film/'>View Film</a>";
 								} else if ($i == 1) { //curriculum
 									echo "&nbsp;<span style='opacity: $opacity'><a class='btn btn-primary read-more-link' href='./video-resources/'>Video Resources</a></span>";
 								} else {
-									// echo "<a class='btn btn-primary read-more-link' href='./interactive-activities/'>Explore Activities</a>";
+									echo "<a class='btn btn-primary read-more-link' href='./interactive-activities/'>Explore Activities</a>";
 								}
 							}
 						?>
