@@ -24,7 +24,7 @@ if ($i == 0) {
 } else if ($i == 1) {
 	$title_text = "The Curriculum";
 } else {
-	$title_text = "Interactive Activites";
+	$title_text = "Interactive Activities";
 }
 ?>
 <div style="background-image: url(<?php echo the_post_thumbnail_url( $post->ID, 'large'); ?>); background-position: 0px 50%; background-size: cover;">
