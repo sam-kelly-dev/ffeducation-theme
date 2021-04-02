@@ -38,6 +38,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<div class="container-fluid" style="padding-bottom: 2rem;">
 						<?php
 							global $post; 
+							$this_menu_order = $post->menu_order;
  							$parentid = $post->ID;
 							if ( is_page() && $post->post_parent )
 								echo "";
