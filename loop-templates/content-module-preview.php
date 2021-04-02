@@ -53,21 +53,6 @@ if ($i == 0) {
 
 					<div class="entry-content text-white">
 						<?php 
-							if ($isComingSoon) {
-								echo "<div style='opacity: $opacity;'>";
-								the_excerpt();
-								echo "</div>";
-								// echo "<div class='text-right'><span style='opacity: $opacity;' class='coming-soon h3'>Coming Soon</span></div>";
-							} else {
-								// echo "<span style='opacity: $opacity;'>". apply_filters('excerpty', the_excerpt(), $readmore). "</span>";
-								if ($i == 0) {;
-									echo "<a class='btn btn-primary read-more-link' href='./the-film/'>View Film</a>";
-								} else if ($i == 1) { //curriculum
-									echo "&nbsp;<span style='opacity: $opacity'><a class='btn btn-primary read-more-link' href='./curriculum/'>Start Learning</a>&nbsp;<a class='btn btn-primary read-more-link' href='./video-resources/'>Video Resources</a></span>";
-								} else if ($i == 2) {
-									echo "<a class='btn btn-primary read-more-link' href='./interactive-activities/'>Explore Activities</a>";
-								}
-							}
 						?>
 					</div><!-- .entry-content -->
 
