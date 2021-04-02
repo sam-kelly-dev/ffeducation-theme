@@ -27,10 +27,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<div class="content-area" id="primary">
 
 				<main class="site-main" id="main" role="main">
-					<?php 
-						$modules = []; 
-						$this_menu_order = $post->menu_order; 
-					?>
+					<?php $modules = []; $this_menu_order = $post->menu_order; ?>
 					<?php while ( have_posts() ) : the_post(); ?>
 						<?php global $post; $modules[] = $post; ?>
 						<?php get_template_part( 'loop-templates/content', 'module' ); ?>
@@ -70,14 +67,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 	    					$children = get_pages($args);
 	    					$found_next_module = false;
 	    					foreach($children as $child) {
-	    						echo $child->post_title;
 	    						if (!$found_next_module && $child->menu_order == $this_menu_order + 1) {
 	    							$found_next_module = true;
 	    							$post = $child;
 	    							$next_text = "Go to next module";
 	    							$next_link = get_the_permalink($child->ID);
 	    							echo '<div class="next-module">';
-	    							get_template_part('loop-templates/content', 'module-preview');
+	    							get_template_part('loop-templates/content', 'preview');
 	    							echo '</div>';
 	    						}
 	    					}
