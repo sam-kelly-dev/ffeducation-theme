@@ -40,7 +40,7 @@ if ($i == 0) {
 								<a class="header-link" href="<?php echo get_permalink($post->ID); ?>" style="opacity: <?php echo $opacity; ?>">
 								<?php } ?>
 									<!-- <span class="h1 inline-block" style="padding-right: 3rem; opacity: <?php echo $opacity; ?>"><?php echo $title_num; ?></span> -->
-									<div class="h1 entry-title" style="padding-top: .5rem;"><div style="display: inline-block; background-color: rgba(0,0,0,0.5); padding-left: 1rem; padding-right: 1rem; text-decoration: none;"><?php the_title(); ?></div></div>
+									<div class="h1 entry-title" style="padding-top: .5rem; opacity: <?php echo $opacity; ?>"><div style="display: inline-block; background-color: rgba(0,0,0,0.5); padding-left: 1rem; padding-right: 1rem; text-decoration: none;"><?php the_title(); ?></div></div>
 								<?php if (!$isComingSoon) { ?>
 								</a>
 								<?php } ?>
@@ -54,7 +54,7 @@ if ($i == 0) {
 					<div class="entry-content text-white">
 						<?php 
 							if ($isComingSoon) {
-								echo "<div>";
+								echo "<div style='opacity: $opacity;'>";
 								the_excerpt();
 								echo "</div>";
 								// echo "<div class='text-right'><span style='opacity: $opacity;' class='coming-soon h3'>Coming Soon</span></div>";
@@ -80,7 +80,7 @@ if ($i == 0) {
 				<div class="col-sm-3 d-flex align-items-end">
 					<div class="text-white align-items-end" style="padding-bottom: 1rem;">
 						<?php if ($isComingSoon) { ?>
-						<span class="next-module-link" style="font-size: 1.5rem; opacity: <?php echo $opacity; ?>;" href="<?php echo $next_link; ?>"><?php echo "COMING SOON"; ?></span>
+						<span class="next-module-link" style="font-size: 1.5rem;" href="<?php echo $next_link; ?>">COMING SOON</span>
 						<?php } else { ?>
 						<a class="next-module-link" style="font-size: 1.5rem; opacity: <?php echo $opacity; ?>;" href="<?php echo $next_link; ?>"><?php if (isset($next_text)) { echo $next_text; } ?></a>
 						<?php } ?>
