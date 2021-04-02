@@ -78,10 +78,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 	    				<?php
 	    					// get all the children
 	    					$args = [
-	    						'post_type' => 'page', 'order' => 'ASC', 'orderby' => 'menu_order', 
+	    						'post_type' => 'page', 
+	    						'order' => 'ASC', 
+	    						'orderby' => 'menu_order', 
 				                'taxonomy' => 'category',
-				                        'field' => 'slug',
-				                        'term' => 'module'
+				                        'field' => 'name',
+				                        'term' => 'Module'
 				                    ];
 	    					$children = get_pages($args);
 	    					$found_next_module = false;

@@ -73,7 +73,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 	    							$next_text = "Go to next module";
 	    							$next_link = get_the_permalink($child->ID);
 	    							echo '<div class="next-module">';
-	    							get_template_part('loop-templates/content', 'preview');
+	    							get_template_part('loop-templates/content', 'module-preview');
 	    							echo '</div>';
 	    						}
 	    					}
