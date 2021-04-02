@@ -31,7 +31,7 @@ if ($i == 0) {
 	<article style="padding-top: 3rem; padding-bottom: 3rem;" class="module-preview" class="text-white" id="post-<?php the_ID(); ?>">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-9">
+				<div class="col-sm-8">
 
 					<header class="entry-header text-white">
 						<div class="row">
@@ -62,7 +62,7 @@ if ($i == 0) {
 
 					</footer><!-- .entry-footer -->
 				</div>
-				<div class="col-sm-3 d-flex align-items-end">
+				<div class="col-sm-4 d-flex align-items-end">
 					<div class="text-white align-items-end" style="padding-bottom: 1rem;">
 						<?php if ($isComingSoon) { ?>
 						<span class="next-module-link" style="font-size: 1.5rem;" href="<?php echo $next_link; ?>">COMING SOON</span>
