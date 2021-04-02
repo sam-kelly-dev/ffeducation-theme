@@ -25,20 +25,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 				<footer class="site-footer text-white" id="colophon">
 					<div class="row">
-						<div class="col-lg-6" style="padding-bottom: 3rem; padding-top: 2rem;">
-							<div class="h3"><strong>Stay Connected</strong></div>
-							<div style="padding-top: 2rem; padding-right: 5rem; font-size: 1.5rem;">
-								You'll be the first to know about upcoming events and learning opportunities
-							</div>
-							<form style="padding-top: 2rem;">
-								<div class="form-row">
-								    <div class="col-auto">
-								    	<a href="https://mailchi.mp/d8080ca78f6f/fantasic-fungi" class="btn btn-danger">Sign Up</a>
-								      <!-- <button type="submit" class="btn btn-danger mb-2 btn-lg">Subscribe</button> -->
-								    </div>
-								</div>
-							</form>
-						</div>
+
+							<?php
+								if (is_active_sidebar('footeremail')) {
+									dynamic_sidebar('footeremail');
+								}
+							?>
 						<div class="col-lg-3" style="padding-bottom: 3rem; padding-top: 2rem;">
 							<div class="h3" style="padding-bottom: 2rem;"><strong>Navigate</strong></div>
 							<?php
