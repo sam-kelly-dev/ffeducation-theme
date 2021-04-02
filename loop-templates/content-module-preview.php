@@ -19,7 +19,6 @@ $title_num = str_replace("Module ", "", $title_num);
 $title_text = $exploded[1];
 $isComingSoon = in_category('Coming Soon');
 $opacity = $isComingSoon ? 0.5 : 1;
-
 if ($i == 0) {
 	$title_text = "The Film";
 } else if ($i == 1) {
@@ -41,7 +40,7 @@ if ($i == 0) {
 								<a class="header-link" href="<?php echo get_permalink($post->ID); ?>" style="opacity: <?php echo $opacity; ?>">
 								<?php } ?>
 									<!-- <span class="h1 inline-block" style="padding-right: 3rem; opacity: <?php echo $opacity; ?>"><?php echo $title_num; ?></span> -->
-									<div class="h1 entry-title" style="padding-top: .5rem; opacity: <?php echo $opacity; ?>"><div style="display: inline-block; background-color: rgba(0,0,0,0.5); padding-left: 1rem; padding-right: 1rem; text-decoration: none;"><?php the_title(); ?></div></div>
+									<div class="h1 entry-title" style="padding-top: .5rem;"><div style="display: inline-block; background-color: rgba(0,0,0,0.5); padding-left: 1rem; padding-right: 1rem; text-decoration: none;"><?php the_title(); ?></div></div>
 								<?php if (!$isComingSoon) { ?>
 								</a>
 								<?php } ?>
@@ -55,7 +54,7 @@ if ($i == 0) {
 					<div class="entry-content text-white">
 						<?php 
 							if ($isComingSoon) {
-								echo "<div style='opacity: $opacity;'>";
+								echo "<div>";
 								the_excerpt();
 								echo "</div>";
 								// echo "<div class='text-right'><span style='opacity: $opacity;' class='coming-soon h3'>Coming Soon</span></div>";
