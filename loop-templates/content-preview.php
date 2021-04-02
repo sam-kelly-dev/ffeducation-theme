@@ -63,7 +63,7 @@ if ($i == 0) {
 								if ($i == 0) {;
 									echo "<a class='btn btn-primary read-more-link' href='./the-film/'>View Film</a>";
 								} else if ($i == 1) { //curriculum
-									echo "&nbsp;<span style='opacity: $opacity'><a class='btn btn-primary read-more-link' href='./video-resources/'>Video Resources</a></span>";
+									echo "&nbsp;<span style='opacity: $opacity'><a class='btn btn-primary read-more-link' href='./curriculum/'>Start Learning</a><a class='btn btn-primary read-more-link' href='./video-resources/'>Video Resources</a></span>";
 								} else {
 									echo "<a class='btn btn-primary read-more-link' href='./interactive-activities/'>Explore Activities</a>";
 								}
