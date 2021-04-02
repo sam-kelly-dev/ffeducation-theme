@@ -77,7 +77,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 	    				<!-- GET SIBLINGS -->
 	    				<?php
 	    					// get all the children
-	    					$this_menu_order = $post->menu_order;
 	    					echo "POST MENU ORDER: " . $post->post_title . "<br/>";
 	    					$args = [
 	    						'post_type' => 'page', 
