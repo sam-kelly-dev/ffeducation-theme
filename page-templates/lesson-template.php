@@ -19,7 +19,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 <?php endif; ?>
 
 
-<div class="wrapper" id="full-width-page-wrapper" style="padding-top: 0px;">
+<div class="wrapper" id="full-width-page-wrapper" style="padding-top: 2rem;">
 	<div id="content">
 
 		<div>
@@ -96,7 +96,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 	    					$forward_text = "";
 	    					$forward_link = "";
 	    					foreach($children as $child) {
-	    						echo $child->post_title . "<br/>";
+	    						// echo $child->post_title . "<br/>";
 	    					}
 
 	    					foreach($children as $child) {
