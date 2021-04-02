@@ -77,7 +77,15 @@ $container = get_theme_mod( 'understrap_container_type' );
 	    				<!-- GET SIBLINGS -->
 	    				<?php
 	    					// get all the children
-	    					$args = ['post_type' => 'page', 'post_parent' => $post->post_parent, 'order' => 'ASC', 'orderby' => 'menu_order'];
+	    					$args = [
+	    						'post_type' => 'page', 
+	    						'post_parent' => $post->post_parent, 
+	    						'order' => 'ASC', 
+	    						'orderby' => 'menu_order',
+				                'taxonomy' => 'category',
+				                        'field' => 'slug',
+				                        'term' => 'modules'
+	    					];
 	    					$children = get_pages($args);
 	    					$found_next_module = false;
 	    					foreach($children as $child) {
