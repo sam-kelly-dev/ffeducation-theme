@@ -86,12 +86,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 	    					];
 	    					$children = get_posts($args);
 	    					$found_next_module = false;
+	    					$found_last_module = false;
 	    					foreach($children as $child) {
 	    						echo $child->post_title . "<br/>";
 	    					}
 	    					foreach($children as $child) {
 	    						if ($this_menu_order > 0) {
-	    							if ($this_menu_order -1 == $child->menu_order) {
+	    							if ($this_menu_order - 1 == $child->menu_order && !$found_last_module) {
+	    								$found_last_module = true;
 	    								$post = $child;
 	    								$next_text = "Go to previous module";
 	    								$next_link = get_the_permalink($child->ID);
