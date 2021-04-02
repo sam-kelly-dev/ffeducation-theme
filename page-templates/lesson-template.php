@@ -8,12 +8,12 @@
  */
 
 // Exit if accessed directly.
+echo "WTF!"; 
+exit;
 defined( 'ABSPATH' ) || exit;
 
 get_header('dark');
 $container = get_theme_mod( 'understrap_container_type' );
-echo "WTF";
-exit;
 ?>
 
 <?php if ( is_front_page() ) : ?>
