@@ -81,7 +81,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 	    					$children = get_pages($args);
 	    					$found_next_module = false;
 	    					foreach($children as $child) {
-	    						echo $child->post_title;
+	    						echo $child->post_title . "<br/>";
+	    					}
+	    					foreach($children as $child) {
 	    						if (!$found_next_module && $child->menu_order == $this_menu_order + 1) {
 	    							$found_next_module = true;
 	    							$post = $child;
