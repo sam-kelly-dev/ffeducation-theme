@@ -118,11 +118,16 @@ $container = get_theme_mod( 'understrap_container_type' );
 	    							// echo '</div>';
 	    						}
 	    					}
+	    					$colsize = "12";
+	    					if ($found_last_module && $found_next_module) {
+	    						$colsize = "6";
+	    					}
+	    					echo "<div class='row'>";
 	    					if ($found_last_module) {
 	    						$post = $back_post;
 	    						$next_text = $back_text;
 	    						$next_link = $back_link;
-	    						echo "<div class='prev-module'>";
+	    						echo "<div class='prev-module col-{$colsize}'>";
 	    						get_template_part('loop-templates/content', 'module-preview');
 	    						echo "</div>";
 	    					}
@@ -130,10 +135,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 	    						$post = $forward_post;
 	    						$next_text = $forward_text;
 	    						$next_link = $forward_link;
-	    						echo "<div class='prev-module'>";
+	    						echo "<div class='prev-module col-{$colsize}'>";
 	    						get_template_part('loop-templates/content', 'module-preview');
 	    						echo "</div>";
 	    					}
+	    					echo "</div>";
 	    				?>
 	<div class="container-fluid film-footer">
 		<div class="row text-center text-white">
