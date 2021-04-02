@@ -27,7 +27,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 			<div class="content-area" id="primary">
 
-				<main class="site-main" id="main" role="main" style="margin-top: 1rem; padding-top: 1rem;">
+				<main class="site-main" id="main" role="main" style="margin-top: 3rem; padding-top: 1rem;">
 
 					<div class="container">
 					<?php while ( have_posts() ) : the_post(); ?>
@@ -56,6 +56,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		</div><!-- .row end -->
 
 	</div><!-- #content -->
+	<!--
 	<div class="container-fluid film-footer">
 		<div class="row text-center text-white">
 			<div class="col">
@@ -86,6 +87,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			</div>
 		</div>
 	</div>
+-->
 
 </div><!-- #full-width-page-wrapper -->
 

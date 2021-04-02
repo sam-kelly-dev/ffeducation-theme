@@ -21,7 +21,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					Are you ready to<br/> explore the magic that<br/> lives beneath your feet?
 				</div>
 				<div style="padding-top: 3rem;">
-					<a href="#modules" class="btn btn-danger btn-lg"><strong>Start Learning</strong></a>
+					<a href="./the-film" class="btn btn-danger btn-lg"><strong>Start Watching</strong></a>
 				</div>
 			</div>
 		</div>

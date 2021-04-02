@@ -30,7 +30,7 @@ defined( 'ABSPATH' ) || exit;
 		</div>
 		-->
 		<!-- .entry-meta -->
-		<div style="padding-top: 3rem; padding-bottom: 3rem;">
+		<div style="padding-top: 4rem; padding-bottom: 3rem;">
 			<?php the_content(); ?>
 		</div>
 		<?php

@@ -40,7 +40,7 @@ if ($i == 0) {
 								<a class="header-link" href="<?php echo get_permalink($post->ID); ?>" style="opacity: <?php echo $opacity; ?>">
 								<?php } ?>
 									<!-- <span class="h1 inline-block" style="padding-right: 3rem; opacity: <?php echo $opacity; ?>"><?php echo $title_num; ?></span> -->
-									<div class="h1 entry-title" style="padding-top: .5rem; opacity: <?php echo $opacity; ?>"><?php echo $title_text; ?></div>
+									<div class="h1 entry-title" style="padding-top: .5rem; opacity: <?php echo $opacity; ?>"><div style="display: inline-block; background-color: rgba(0,0,0,0.5); padding-left: 1rem; padding-right: 1rem; text-decoration: none;"><?php echo $title_text; ?></div></div>
 								<?php if (!$isComingSoon) { ?>
 								</a>
 								<?php } ?>
@@ -57,11 +57,15 @@ if ($i == 0) {
 								echo "<div style='opacity: $opacity;'>";
 								the_excerpt();
 								echo "</div>";
-								echo "<div class='text-right'><span style='opacity: $opacity;' class='coming-soon h3'>Coming Soon</span></div>";
+								// echo "<div class='text-right'><span style='opacity: $opacity;' class='coming-soon h3'>Coming Soon</span></div>";
 							} else {
-								echo "<span style='opacity: $opacity;'>". apply_filters('excerpty', the_excerpt(), $readmore). "</span>";
-								if ($i == 1) { //curriculum
+								// echo "<span style='opacity: $opacity;'>". apply_filters('excerpty', the_excerpt(), $readmore). "</span>";
+								if ($i == 0) {;
+									// echo "<a class='btn btn-primary read-more-link' href='./the-film/'>View Film</a>";
+								} else if ($i == 1) { //curriculum
 									echo "&nbsp;<span style='opacity: $opacity'><a class='btn btn-primary read-more-link' href='./video-resources/'>Video Resources</a></span>";
+								} else {
+									// echo "<a class='btn btn-primary read-more-link' href='./interactive-activities/'>Explore Activities</a>";
 								}
 							}
 						?>
