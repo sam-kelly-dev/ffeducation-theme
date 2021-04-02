@@ -12,7 +12,6 @@ defined( 'ABSPATH' ) || exit;
 
 get_header('dark');
 $container = get_theme_mod( 'understrap_container_type' );
-$this_menu_order = $post->menu_order;
 ?>
 
 <?php if ( is_front_page() ) : ?>
@@ -78,6 +77,8 @@ $this_menu_order = $post->menu_order;
 	    				<!-- GET SIBLINGS -->
 	    				<?php
 	    					// get all the children
+	    					$this_menu_order = $post->menu_order;
+	    					echo "POST MENU ORDER: " . $post->post_title . "<br/>";
 	    					$args = [
 	    						'post_type' => 'page', 
 	    						'order' => 'ASC', 
