@@ -41,7 +41,7 @@ if ($i == 0) {
 								<a class="header-link" href="<?php echo get_permalink($post->ID); ?>" style="opacity: <?php echo $opacity; ?>">
 								<?php } ?>
 									<!-- <span class="h1 inline-block" style="padding-right: 3rem; opacity: <?php echo $opacity; ?>"><?php echo $title_num; ?></span> -->
-									<div class="h1 entry-title" style="padding-top: .5rem; opacity: <?php echo $opacity; ?>"><div style="display: inline-block; background-color: rgba(0,0,0,0.5); padding-left: 1rem; padding-right: 1rem; text-decoration: none;"><?php get_the_title(); ?></div></div>
+									<div class="h1 entry-title" style="padding-top: .5rem; opacity: <?php echo $opacity; ?>"><div style="display: inline-block; background-color: rgba(0,0,0,0.5); padding-left: 1rem; padding-right: 1rem; text-decoration: none;"><?php the_title(); ?></div></div>
 								<?php if (!$isComingSoon) { ?>
 								</a>
 								<?php } ?>
