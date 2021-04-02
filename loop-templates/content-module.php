@@ -15,7 +15,7 @@ defined( 'ABSPATH' ) || exit;
 		<div class="container d-flex" style="height: 100%;">
 			<div class="row align-items-center text-white">
 				<div class="col-sm-12">
-					<?php the_title( '<h1 class="entry-title"><strong>', '</strong></h1>' ); ?>
+					<?php the_title( '<h1 class="entry-title"><strong>!!', '</strong></h1>' ); ?>
 				</div>
 			</div>
 		</div>
