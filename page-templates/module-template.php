@@ -27,7 +27,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<div class="content-area" id="primary">
 
 				<main class="site-main" id="main" role="main">
-					<?php $modules = []; $this_menu_order = $post->menu_order; ?>
+					<?php 
+						$modules = []; 
+						$this_menu_order = $post->menu_order; 
+					?>
 					<?php while ( have_posts() ) : the_post(); ?>
 						<?php global $post; $modules[] = $post; ?>
 						<?php get_template_part( 'loop-templates/content', 'module' ); ?>
