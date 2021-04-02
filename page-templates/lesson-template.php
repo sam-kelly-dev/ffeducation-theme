@@ -84,7 +84,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 	    						'orderby' => 'menu_order',
 				                'taxonomy' => 'category',
 				                        'field' => 'slug',
-				                        'term' => 'modules'
+				                        'term' => 'module'
 	    					];
 	    					$children = get_pages($args);
 	    					$found_next_module = false;
