@@ -12,7 +12,7 @@ $parent_id = $post->post_parent;
 $parent_post = get_post($post->post_parent);
 ?>
 
-<div <?php post_class(); ?> id="post-<?php the_ID(); ?>" style="min-height: 55vh;">
+<div <?php post_class(); ?> id="post-<?php the_ID(); ?>" style="min-height: 85vh;">
 
 	<div class="entry-content">
 		<!-- .entry-meta -->
