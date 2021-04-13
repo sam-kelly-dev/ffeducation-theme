@@ -49,7 +49,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<div class="col">
 				<div class="row justify-content-center">
 					<div class="col-12 col-md-10 col-lg-8">
-						<h2>Explore Online Activities!</h2>
+						<h2>Explore Online Activities</h2>
 						<div class="text-fixer">
 							<p class="text-justify">Enjoy the film and want to dive deeper into the fungi kingdom! We’ve partnered with the Fungi Files to bring you interactive online activities that will leave you ready to be the next citizen scientist!</p>
 						</div>
@@ -62,7 +62,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<div class="col">
 				<div class="row justify-content-center">
 					<div class="col-12 col-md-10 col-lg-8">
-						<h2>Module Resources!</h2>
+						<h2>Module Resources</h2>
 						<div class="text-fixer">
 							<p>We've organized all of the clips by module to make them easier for you to find!</p>
 						</div>
