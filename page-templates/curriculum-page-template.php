@@ -54,7 +54,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							<p class="text-justify">Enjoy the film and want to dive deeper into the fungi kingdom! We’ve partnered with the Fungi Files to bring you interactive online activities that will leave you ready to be the next citizen scientist!</p>
 						</div>
 						<a href="/interactive-activities" class="btn btn-danger">
-							Start Course
+							Start Exploring
 						</a>
 					</div>
 				</div>
@@ -67,7 +67,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							<p>We've organized all of the clips by module to make them easier for you to find!</p>
 						</div>
 						<a href="/video-resources" class="btn btn-danger">
-							Go To Clips
+							View Resources
 						</a>
 					</div>
 				</div>
