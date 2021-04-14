@@ -61,9 +61,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<div class="row justify-content-center">
 					<div class="col-12 col-md-9 col-lg-8">
 				
-						<h2>Module Resources</h2>
+						<h2>Explore Curriculum</h2>
 						<div class="text-fixer">
-							<p class="text-justify">We've organized all of the clips by module to make them easier for you to find!</p>
+							<p class="text-justify">Deepen your understanding of the interconnected ways fungi live and thrive in every aspect of our world - including our soil, our trees, our air and water, and even inside of our bodies.</p>
 						</div>
 						<a href="/video-resources" class="btn btn-danger">
 							View Resources
