@@ -66,7 +66,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<div class="text-fixer">
 							<p>We've organized all of the clips by module to make them easier for you to find!</p>
 						</div>
-						<a href="/video-resources" class="btn btn-danger">
+						<a href="/modules/resources" class="btn btn-danger">
 							View Resources
 						</a>
 					</div>
