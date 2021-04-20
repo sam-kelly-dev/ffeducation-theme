@@ -41,7 +41,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 								    'container_class' => 'footer-nav-menu-container-class' ) ); 
 								?>
 						</div>
-						<div class="col-lg-3" style="padding-bottom: 3rem; padding-top: 3rem;">
+						<div class="col-lg-3" style="padding-bottom: 3rem; padding-top: 2rem;">
 							<?php
 								if (is_active_sidebar('footersponsors')) {
 									dynamic_sidebar('footersponsors');
