@@ -76,8 +76,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 	</div><!-- #content -->
 	    				<!-- GET SIBLINGS -->
-	    				<!--
 	    				<?php
+	    				/*
 	    					// get all the children
 	    					$args = [
 	    						'post_type' => 'page', 
@@ -141,8 +141,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 	    						echo "</div>";
 	    					}
 	    					echo "</div>";
+	    				*/
 	    				?>
-	    			-->
 	    			<!--
 	<div class="container-fluid film-footer">
 		<div class="row text-center text-white">
