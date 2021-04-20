@@ -65,8 +65,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<div class="text-fixer">
 							<p class="text-justify">Deepen your understanding of the interconnected ways fungi live and thrive in every aspect of our world - including our soil, our trees, our air and water, and even inside of our bodies.</p>
 						</div>
-						<a href="/video-resources" class="btn btn-danger">
-							View Resources
+						<a href="/curriculum" class="btn btn-danger">
+							View Curriculum
 						</a>
 					</div>
 				</div>
