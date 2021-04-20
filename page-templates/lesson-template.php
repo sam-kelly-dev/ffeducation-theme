@@ -76,6 +76,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 	</div><!-- #content -->
 	    				<!-- GET SIBLINGS -->
+	    				<!--
 	    				<?php
 	    					// get all the children
 	    					$args = [
@@ -141,6 +142,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 	    					}
 	    					echo "</div>";
 	    				?>
+	    			-->
+	    			<!--
 	<div class="container-fluid film-footer">
 		<div class="row text-center text-white">
 			<div class="col">
@@ -171,6 +174,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			</div>
 		</div>
 	</div>
+-->
 
 </div><!-- #full-width-page-wrapper -->
 <script>
